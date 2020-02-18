@@ -1,15 +1,14 @@
 function iterativeLog(array) {
-  array.forEach((el,i)=> {
-    console.log(`${i}: ${el}`)
+  array.forEach((index, element) => {
+    console.log(`${index}:${element}`)
   })
 }
 
 function iterate(callback) {
-  const cats = ["Garfield", "Bianca", "Petunia"];
-  cats.forEach(callback);
-  return cats;
+  let array = ['cat', 'dog', 'horse']
+  array.forEach(callback);
+  return array;
 }
 
 function doToArray(array, callback) {
   array.forEach(callback);
-}
