@@ -3,3 +3,9 @@ function iterativeLog(array) {
     console.log(`${i}: ${el}`)
   })
 }
+
+function iterate(callback) {
+  const cats = ["Garfield", "Bianca", "Petunia"];
+  cats.forEach(callback);
+  return cats;
+}
